@@ -1,7 +1,7 @@
 js-decode
 =========
 
-JavaScript decode function, Just like Oracle decode function! and switcher to replace switch case.
+JavaScript decode function, Just like Oracle decode function!
 
 Example:
 ```javascript
@@ -22,20 +22,5 @@ decode(
 	}
 ));
 
-var b = '3';
-var o = {
-	'a': 'options:a',
-	'b': function(s){ return 'options:b'; },
-	'1': 'options:1',
-}
-console.log(
-switcher(
-	b, {
-		'a': 'options:a',
-		'b': function(s){ return 'options:b'; },
-		'1': 'options:1',
-	}, function(s){
-		return 'other:'+s;
-	}
-));
+
 ```
